@@ -88,7 +88,7 @@ function mostrarDatos (){
     if (nombreInput.value == "" || numeroInput.value == "" || numeroInput.value.length < 19  || expiracionInput.value == "" || ccvInput.value == "" || ccvInput.value.length < 3) {
         alert("Completa los campos")
     } else {
-        alert("Nombre Completo: "+ nombreInput.value + " \nNumero De TarJeta: "+ numeroInput.value + "\nExpiracion: "+ expiracionInput.value + "\nCCV: "+ ccvInput.value)
+        alert("Nombre Completo: "+ nombreInput.value + " \nNumero De Tarjeta: "+ numeroInput.value + "\nExpiracion: "+ expiracionInput.value + "\nCCV: "+ ccvInput.value)
     }
 }
 numeroInput.addEventListener("keyup", setNumeroTarjeta)
