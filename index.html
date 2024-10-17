@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta De Credito</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <div class="front">
+                <img class="chip" src="./img/card-chip.png" alt="">
+                <div>
+                    <span class="label">Número de Tarjeta</span>
+                    <span id="numeroTarjeta">#### #### #### ####</span>
+                </div>
+                <div class="row">
+                    <div>
+                        <span class="label">Nombre Completo</span>
+                        <span id="nombreCompleto"></span>
+                    </div>
+                    <div>
+                        <span class="label">EXPIRACIÓN</span>
+                        <span id="fechaExpiracion"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <div class="band"></div>
+                <div class="info">
+                    
+                    <div class="ccv">
+                        <div class="firma">
+                            <span id="firma"></span>
+                        </div>
+                        <span id="ccv">***</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal" onclick="toggleFormulario()">+</button>
+        <form id="form">
+            <div>
+                <label>Nombre Completo</label>
+                <input type="text" id="inputnombreCompleto" maxlength="50">
+            </div>
+            <div>
+                <label>Número de tarjeta</label>
+                <input type="text" id="inputnumTarjeta" maxlength="19" minlength="0">
+            </div>
+
+            <div class="back">
+                <label>Expiración</label>
+                <input type="month" id="inputExpiracion">
+            </div>
+
+            <div class="back">
+                <label>CCV</label>
+                <input type="text" id="inputccv" maxlength="3">
+            </div>
+
+            <input type="submit" value="submit" onclick="mostrarDatos()">
+        </form>
+    </main>
+</body>
+<script src="./app.js"></script>
+
+</html>
